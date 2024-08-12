@@ -1,0 +1,103 @@
+.enjoy-a-new {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 1;
+}
+.enjoy-coffee {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-2xl);
+}
+.explore-all-flavours {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 34px;
+  color: var(--color-dimgray);
+  text-align: center;
+}
+.enjoy-blend {
+  width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+.enjoy-description,
+.frame-parent {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.enjoy-description {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frame-parent {
+  display: grid;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  grid-template-columns: repeat(4, minmax(210px, 1fr));
+  z-index: 1;
+  font-size: var(--font-size-3xl);
+}
+.coffee-style,
+.coffee-style-description {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.coffee-style-description {
+  width: 1180px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.coffee-style {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-35xl);
+  color: var(--coffee);
+  font-family: var(--font-playfair-display);
+}
+@media screen and (max-width: 1125px) {
+  .frame-parent {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(210px, 364px));
+  }
+}
+@media screen and (max-width: 800px) {
+  .enjoy-a-new {
+    font-size: var(--font-size-24xl);
+  }
+  .coffee-style-description {
+    gap: var(--gap-base);
+  }
+}
+@media screen and (max-width: 450px) {
+  .enjoy-a-new {
+    font-size: var(--font-size-13xl);
+  }
+  .explore-all-flavours {
+    font-size: var(--font-size-base);
+    line-height: 27px;
+  }
+  .frame-parent {
+    grid-template-columns: minmax(210px, 1fr);
+  }
+}

@@ -1,0 +1,154 @@
+.coffee-blast-icon2 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: -121px;
+  max-height: 100%;
+  width: 498px;
+  object-fit: cover;
+}
+.rectangle-div {
+  height: 48px;
+  width: 134px;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(249, 192, 106, 0.22);
+  border-radius: var(--br-5xl);
+  background-color: var(--color-sandybrown-100);
+  display: none;
+}
+.learn-more {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  min-width: 87px;
+  z-index: 1;
+}
+.group-div {
+  position: absolute;
+  top: 29px;
+  left: 93px;
+  box-shadow: 0 6px 12px rgba(249, 192, 106, 0.22);
+  border-radius: var(--br-5xl);
+  background-color: var(--color-sandybrown-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-4xl) var(--padding-smi);
+  white-space: nowrap;
+  z-index: 1;
+}
+.coffee-blast-parent {
+  height: 272px;
+  width: 377px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -127px;
+  left: -93px;
+}
+.discover-the-best {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.bean-scene-is {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 34px;
+  color: var(--color-dimgray);
+  z-index: 1;
+}
+.coffee-description,
+.discover-the-best-coffee-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.discover-the-best-coffee-parent {
+  align-self: stretch;
+  gap: var(--gap-10xl);
+}
+.coffee-description {
+  flex: 1;
+  padding: var(--padding-49xl) 0 0;
+  box-sizing: border-box;
+  min-width: 380px;
+  max-width: 100%;
+}
+.mask-group-icon {
+  width: 500px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.coffee-description-parent {
+  flex: 1;
+  justify-content: flex-start;
+  gap: var(--gap-76xl);
+  font-size: var(--font-size-35xl);
+  color: var(--coffee);
+}
+.coffee-blast-learn-more,
+.coffee-description-parent,
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.coffee-blast-learn-more {
+  width: 1180px;
+  justify-content: flex-start;
+  position: relative;
+}
+.content {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  font-family: var(--font-playfair-display);
+}
+@media screen and (max-width: 1300px) {
+  .coffee-description-parent {
+    gap: var(--gap-28xl);
+  }
+}
+@media screen and (max-width: 1125px) {
+  .mask-group-icon {
+    flex: 1;
+  }
+  .coffee-description-parent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .discover-the-best {
+    font-size: var(--font-size-24xl);
+  }
+  .coffee-description-parent {
+    gap: var(--gap-5xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .discover-the-best {
+    font-size: var(--font-size-13xl);
+  }
+  .bean-scene-is {
+    font-size: var(--font-size-base);
+    line-height: 27px;
+  }
+  .coffee-description {
+    min-width: 100%;
+  }
+}
